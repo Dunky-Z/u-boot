@@ -160,7 +160,7 @@ static int sh_qspi_xfer_common(struct sh_qspi_slave *ss, unsigned int bitlen,
 	}
 
 	if (bitlen % 8) {
-		printf("%s: bitlen is not 8bit alined %d", __func__, bitlen);
+		printf("%s: bitlen is not 8bit aligned %d", __func__, bitlen);
 		return 1;
 	}
 
